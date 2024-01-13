@@ -1,11 +1,22 @@
+//a programm to check students result
+
 #include<stdio.h>
-int main() {
-    int num;
-    printf("enter the n number:");
-    scanf("%d",&num);
-    if(num%2==0)
-    {
-printf("%d is a even number",num);
-    }
+int main()
+ {
+   int marks;
+   printf("enter the value:");
+   scanf("%d",&marks);
+   if (marks>=65)
+   {
+    printf("Topper");
+   }
+   else if (marks>=55)
+   {
+    printf("First");
+   }
+   else
+   {
+    printf("fail");
+   }
     return 0;
 }

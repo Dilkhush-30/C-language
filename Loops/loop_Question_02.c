@@ -1,7 +1,8 @@
 // table
 
 #include<stdio.h>
-int main() {
+int main()
+ {
     int num;
     int i=1;
     int t;
