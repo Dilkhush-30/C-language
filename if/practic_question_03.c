@@ -17,7 +17,7 @@ int main()
     c=a%b;
     if(c==0)
     {
-      printf("\nH.C.M=%d",b);
+      printf("\nH.C.F=%d",b);
       a=c*a;
     }
     else

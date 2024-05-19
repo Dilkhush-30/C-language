@@ -1,22 +1,20 @@
-//a programm to check students result
+//a programm to calculate  simple intrest//
+
 
 #include<stdio.h>
 int main()
- {
-   int marks;
-   printf("enter the value:");
-   scanf("%d",&marks);
-   if (marks>=65)
-   {
-    printf("Topper");
-   }
-   else if (marks>=55)
-   {
-    printf("First");
-   }
-   else
-   {
-    printf("fail");
-   }
-    return 0;
+{
+   int P,R,T,SI;
+   printf("Enter the principal:");
+   scanf("%d",&P);
+
+   printf("Enter the rate:");
+   scanf("%d",&R);
+
+   printf("Enter the time:");
+   scanf("%d",&T);
+
+   SI=P*T*R/100;
+   printf("The simple intrest is %d",SI);
+   return 0;
 }
