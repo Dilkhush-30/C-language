@@ -1,13 +1,7 @@
 #include<stdio.h>
-#include<dos.h>
-void main()
+int main()
 {
-    int i;
-    textcolor(RED);
-    textbackground(WHITE);
-    for(i=1;i<=100;i++){
-        cprintf("i love you \n");
-        delay(200);
-    }
-    getch();
+    printf("%d",5+3*2);
+ 
+    return 0;
 }

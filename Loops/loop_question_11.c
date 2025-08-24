@@ -13,7 +13,7 @@ int main() {
     }
     printf("\n");
 
-    // Question 2
+    // Question 2            
     i = 1;
     int j = 3;
     for (int k = 0; k < 10; k++) {

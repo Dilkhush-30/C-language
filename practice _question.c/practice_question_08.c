@@ -16,7 +16,5 @@ int main()
     {
         printf("%d is greater",num2);
     }
-    return 0;
-    
-    
+    return 0;   
 }
