@@ -1,6 +1,4 @@
 //a programm to calculate  simple intrest//
-
-
 #include<stdio.h>
 int main()
 {

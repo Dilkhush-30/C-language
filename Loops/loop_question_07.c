@@ -4,8 +4,6 @@
           * * *
            * *
             * 
-     
-
 */
 #include<stdio.h>
 int main()
@@ -22,8 +20,7 @@ int main()
             printf("* ");
             k--;
         }
-        
-        
+         
         printf("\n");
     }
     return 0;
