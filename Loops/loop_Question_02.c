@@ -1,16 +1,17 @@
 // table
 
-#include<stdio.h>
+#include <stdio.h>
 int main()
- {
+{
     int num;
-    int i=1;
+    int i = 1;
     int t;
     printf("Enter the number : ");
     scanf("%d", &num);
-    while(i<=10) {
+    while (i <= 10)
+    {
         t = num * i;
-        // printf("%d\n",t); 
+        // printf("%d\",t);
         printf("%d X %d = %d\n", num, i, t);
         i++;
     }

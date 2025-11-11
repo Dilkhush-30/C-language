@@ -1,5 +1,6 @@
 // Write a function that calculates the factorial of a given number.
 #include <stdio.h>
+// Recursive version
 int factorial(int n)
 {
   if (n < 0)
@@ -20,3 +21,15 @@ int main()
     printf("Factorial of %d is: %d\n", num, result);
   return 0;
 }
+/*
+factorial_recursive(5)
+→ 5 × factorial_recursive(4)
+→ 5 × (4 × factorial_recursive(3))
+→ 5 × (4 × (3 × factorial_recursive(2)))
+→ 5 × (4 × (3 × (2 × factorial_recursive(1))))
+→ 5 × (4 × (3 × (2 × 1)))
+→ 5 × (4 × (3 × 2))
+→ 5 × (4 × 6)
+→ 5 × 24
+→ 120
+*/
