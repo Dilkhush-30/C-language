@@ -1,4 +1,4 @@
-// A function to Searching in a 2D Array in run time
+//  write A function in C to Searching numbers in a 2D Array in run time
 #include <stdio.h>
 #include <stdlib.h>
 // User-defined function to search for a target value in a 2D array
@@ -16,24 +16,31 @@ int search2D(int rows, int cols, int **matrix, int target)
 }
 int main()
 {
-  int rows = 3, cols = 3;
+  int rows, cols, target;
+  printf("Enter number of rows and columns: ");
+  scanf("%d %d", &rows, &cols);
+
   // Dynamically allocate memory for a 2D array
   int **matrix = (int **)malloc(rows * sizeof(int *));
   for (int i = 0; i < rows; i++)
   {
     matrix[i] = (int *)malloc(cols * sizeof(int));
   }
-  // Initialize the matrix
-  int count = 1;
+
+  // Input elements of the matrix
+  printf("Enter elements of the matrix:\n");
   for (int i = 0; i < rows; i++)
   {
     for (int j = 0; j < cols; j++)
     {
-      matrix[i][j] = count++;
+      scanf("%d", &matrix[i][j]);
     }
   }
 
-  int target = 5;
+  printf("Enter the target value to search: ");
+  scanf("%d", &target);
+
+  // Call the search function
   if (search2D(rows, cols, matrix, target))
     printf("Element %d found in the matrix.\n", target);
   else
@@ -45,6 +52,5 @@ int main()
     free(matrix[i]);
   }
   free(matrix);
-
   return 0;
 }
