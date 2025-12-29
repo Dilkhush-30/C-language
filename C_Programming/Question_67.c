@@ -1,7 +1,8 @@
 // A function that multiplies two matrices.
 #include <stdio.h>
 #define MAX 10
-void multiply_matrices(int first[MAX][MAX], int second[MAX][MAX], int result[MAX][MAX], int row_first, int column_first, int row_second, int column_second)
+void multiply_matrices(int first[MAX][MAX], int second[MAX][MAX], int result[MAX][MAX],
+                       int row_first, int column_first, int row_second, int column_second)
 {
   // Initialize the result matrix to zero
   for (int i = 0; i < row_first; i++)
