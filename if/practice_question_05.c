@@ -1,14 +1,12 @@
 #include <stdio.h>
-
-int main() {
-    int num = 5;
-
-    if (num > 0) {
-        printf("Positive number\n");
-    } else {
-        printf("Negative number\n");
+int main()
+{
+    int a, b;
+    a = 10;
+    b = 50;
+    if (a > b)
+    {
+        printf("a is greater than b");
     }
-
     return 0;
 }
-
